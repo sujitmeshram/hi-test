@@ -1,9 +1,119 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Veyn Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VeynCorp - DJ & Creative Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      color: #00ffe1;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 1rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      background: rgba(255, 255, 255, 0.1);
+      transform: scale(1.02);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #666;
+      margin-top: auto;
+    }
+
+    a {
+      color: #00ffe1;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      section {
+        padding: 1rem;
+      }
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to VeynCorp!</h1>
+
+  <header>
+    <h1>VeynCorp</h1>
+    <p>DJ | Creative | Sound Explorer</p>
+  </header>
+
+  <section>
+    <div class="card">
+      <h2>🎧 About Me</h2>
+      <p>Hi! I'm DJ Veyn, a sound explorer blending beats, bass, and energy into unforgettable sets. Based in India, performing globally.</p>
+    </div>
+
+    <div class="card">
+      <h2>🚀 Projects</h2>
+      <p>Currently working on <strong>Veyn Beats</strong> — a platform for releasing original mixes, remixes, and AI-generated sounds.</p>
+    </div>
+
+    <div class="card">
+      <h2>📩 Contact</h2>
+      <p>Want to book me for a show or collab? <a href="mailto:hello@veyncorp.com">Email me</a> or DM on Instagram <a href="#">@djveyn</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 VeynCorp. All rights reserved.
+  </footer>
+
 </body>
 </html>
